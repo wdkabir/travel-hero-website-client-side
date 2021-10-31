@@ -70,8 +70,8 @@ const ManageOrders = () => {
                                         </Card.Text>
                                         </Card.Body>
                                         <Card.Footer className="d-flex flex-column flex-md-row card-footer justify-content-between">
-                                            <Button onClick={()=>handleUpdate(myorder._id)} variant="outline-success">Update Package</Button>
-                                            <Button onClick={()=>handleDelete(myorder._id)} variant="outline-danger"> Delete Package</Button>
+                                            <Button className="my-1" onClick={()=>handleUpdate(myorder._id)} variant="outline-success">Update Package</Button>
+                                            <Button className="my-1" onClick={()=>handleDelete(myorder._id)} variant="outline-danger"> Delete Package</Button>
                                             </Card.Footer>
                                     </Card>
                                 </Col>
