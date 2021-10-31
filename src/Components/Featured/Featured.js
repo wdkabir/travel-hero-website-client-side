@@ -12,10 +12,10 @@ const Featured = () => {
     return (
         <>
         <section className="featured my-5">
-            <div className="container">
-                <div className="row mx-auto">
-                    <div className="col-md-3 text-center">
-                        <Card style={{ width: '18rem' }} className="featured-card py-3">
+            <Container className="mx-auto">
+                <Row className="mx-auto">
+                <div className="col-md-3 text-center mb-3">
+                        <Card className="featured-card py-3">
                         <Card.Body>
                             <Card.Title> <p className="card-icon">{cardIcon1}</p> </Card.Title>
                             <Card.Text>
@@ -24,8 +24,8 @@ const Featured = () => {
                         </Card.Body>
                         </Card>
                     </div>
-                    <div className="col-md-3 text-center">
-                        <Card style={{ width: '18rem' }} className="featured-card py-3">
+                    <div className="col-md-3 text-center mb-3">
+                        <Card className="featured-card py-3">
                         <Card.Body>
                             <Card.Title> <p className="card-icon">{cardIcon2}</p> </Card.Title>
                             <Card.Text>
@@ -34,8 +34,8 @@ const Featured = () => {
                         </Card.Body>
                         </Card>
                     </div>
-                    <div className="col-md-3 text-center">
-                        <Card style={{ width: '18rem' }} className="featured-card py-3">
+                    <div className="col-md-3 text-center mb-3">
+                        <Card className="featured-card py-3">
                         <Card.Body>
                             <Card.Title> <p className="card-icon">{cardIcon3}</p> </Card.Title>
                             <Card.Text>
@@ -44,8 +44,8 @@ const Featured = () => {
                         </Card.Body>
                         </Card>
                     </div>
-                    <div className="col-md-3 text-center">
-                        <Card style={{ width: '18rem' }} className="featured-card py-3">
+                    <div className="col-md-3 text-center mb-3">
+                        <Card className="featured-card py-3">
                         <Card.Body>
                             <Card.Title> <p className="card-icon">{cardIcon4}</p> </Card.Title>
                             <Card.Text>
@@ -54,8 +54,8 @@ const Featured = () => {
                         </Card.Body>
                         </Card>
                     </div>
-                </div>
-            </div>
+                </Row>
+            </Container>
         </section>
         <section className="booking-section container my-5">
                 <Container className="text-center">

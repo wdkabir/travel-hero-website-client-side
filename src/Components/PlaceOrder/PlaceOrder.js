@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Form, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 import './PlaceOrder.css';
 
@@ -9,6 +9,7 @@ const PlaceOrder = () => {
     const { user } = useAuth();
     console.log(user);
     const { id } = useParams();
+    const history = useHistory();
     const [orderplace, setOrderplace] = useState([]);
     useEffect(()=>{
         fetch(`http://localhost:5000/allorder/${id}`)
@@ -31,6 +32,7 @@ const PlaceOrder = () => {
     })
     .then (res =>{
         alert('orde place hoiche');
+        history.push('/myorders');
     })
   } 
     return (

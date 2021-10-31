@@ -1,9 +1,11 @@
 import React from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import { useHistory } from 'react-router';
 import './Addpackages.css';
 
 const Addpackages = () => {
+    const history = useHistory();
     const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) =>{
     fetch('http://localhost:5000/packages', {
@@ -16,6 +18,7 @@ const Addpackages = () => {
     .then(res =>{
         if (res){
             alert('data add hoiche');
+            history.push('/packages');
             reset();
         }
     })

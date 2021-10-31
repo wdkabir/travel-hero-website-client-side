@@ -12,7 +12,7 @@ const Banner = () => {
                     <Row>
                         <div className="col-md-12">
                             <h1 className="booking-text">TO MAKE YOUR NEXT TRAVEL DESTINATION...</h1>
-                            <Link><Button size="lg" className="booking-button">View All Trip</Button></Link>
+                            <Link to="/packages"><Button size="lg" className="booking-button mt-3">View All Packages</Button></Link>
                         </div>
                     </Row>
                 </Container>
