@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 import Swal from 'sweetalert2';
 import useAuth from '../../Hooks/useAuth';
 
 const MyOrders = () => {
     const {user} = useAuth();
+    const history = useHistory();
     const [myOrders, setMyOrders] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/myorders/${user?.email}`)
+        fetch(`https://howling-monster-36925.herokuapp.com/myorders/${user?.email}`)
         .then((res)=> res.json())
         .then((data) => setMyOrders(data));
     }, [user?.email]);
     const handleOrderDelete = (id) => {
         const proced = window.confirm('Are you Sure, Delete Your Data?');
         if (proced) {
-            const url = `http://localhost:5000/orderdelete/${id}`;
+            const url = `https://howling-monster-36925.herokuapp.com/orderdelete/${id}`;
 
             fetch(url, {
                 method: 'DELETE'
@@ -27,13 +29,14 @@ const MyOrders = () => {
                         )
 
                     }
-                })
+                    history.push('/manageorders');
+                });
         }
     }
     return (
         <>
     <div className="container">
-        <h1 className="text-center mt-5">Most Popular Packages</h1>
+        <h1 className="text-center mt-5">My Orders</h1>
     </div>
         <div className="py-5">
             <Container>

@@ -12,7 +12,7 @@ const PlaceOrder = () => {
     const history = useHistory();
     const [orderplace, setOrderplace] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/allorder/${id}`)
+        fetch(`https://howling-monster-36925.herokuapp.com/allorder/${id}`)
         .then(res => res.json())
         .then(data =>{
             setOrderplace(data)
@@ -23,7 +23,7 @@ const PlaceOrder = () => {
     data.status = 'pending';
     data.email = user?.email;
     data.orderplace = orderplace;
-    fetch('http://localhost:5000/placeorder', {
+    fetch('https://howling-monster-36925.herokuapp.com/placeorder', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -31,7 +31,7 @@ const PlaceOrder = () => {
         body: JSON.stringify(data)
     })
     .then (res =>{
-        alert('orde place hoiche');
+        alert('Place Your Order');
         history.push('/myorders');
     })
   } 

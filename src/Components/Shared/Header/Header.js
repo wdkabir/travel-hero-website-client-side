@@ -1,11 +1,15 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown, Button } from 'react-bootstrap';
 import { NavLink, useHistory, useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignInAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import Swal from 'sweetalert2';
 import useAuth from '../../../Hooks/useAuth';
 import './Header.css';
 
 const Header = () => {
+    const signIn = <FontAwesomeIcon icon={faSignInAlt} />
+    const signOut = <FontAwesomeIcon icon={faSignOutAlt} />
     const activeMenu = {
         fontWeight: "bold",
         color: "#4fc9e0"
@@ -36,6 +40,7 @@ const Header = () => {
             .finally(() => setIsLoading(false))
     }
     return (
+        
         <>
             <Navbar bg="light" expand="lg" sticky="top">
                 <Container>
@@ -76,7 +81,7 @@ const Header = () => {
                                         activeMenu
                                     } className="fs-6 fw-bold px-3">
                                         <Button variant="info" className="text-btn fs-6 fw-bold">
-                                            Login
+                                            Login {signIn}
                                         </Button>
                                     </Nav.Link>
                                 </>
@@ -106,7 +111,7 @@ const Header = () => {
                                     <div className="text-center">
                                         <h6>{displayName}</h6>
                                         <button onClick={handleLogout} className="btn btn-info">
-                                            Log Out
+                                            Log Out {signOut}
                                         </button>
                                     </div>
                                 </NavDropdown>

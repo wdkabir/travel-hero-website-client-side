@@ -22,7 +22,7 @@ const Contact = () => {
         <div>
             <Container>
                 <Row className="text-center my-5">
-                <div className="col-md-6">
+                <div className="col-md-6 my-5">
                 <Image src="https://i.ibb.co/wpmqH9w/contact.jpg" fluid />
                     <p className="my-3">For further information on any of our services, or to reach a patient, please contact The Greenlife Hospital main phone line. If you have any questions, one of our Contact Centre Agents will be happy to direct your call to the appropriate area.</p>
                 </div>

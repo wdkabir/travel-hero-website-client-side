@@ -8,7 +8,7 @@ const Addpackages = () => {
     const history = useHistory();
     const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) =>{
-    fetch('http://localhost:5000/packages', {
+    fetch('https://howling-monster-36925.herokuapp.com/packages', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -17,7 +17,7 @@ const Addpackages = () => {
     })
     .then(res =>{
         if (res){
-            alert('data add hoiche');
+            alert('Add Your Package');
             history.push('/packages');
             reset();
         }

@@ -5,14 +5,14 @@ import Swal from 'sweetalert2';
 const ManageOrders = () => {
     const [manageOrder, setManageOrder] = useState([]);
     useEffect(() =>{
-        fetch('http://localhost:5000/manageorders')
+        fetch('https://howling-monster-36925.herokuapp.com/manageorders')
         .then((res) => res.json())
         .then((data) => setManageOrder(data));
     });
     const handleDelete = (id) => {
         const proced = window.confirm('Are you Sure, Delete Your Data?');
         if (proced) {
-            const url = `http://localhost:5000/allorderdelete/${id}`;
+            const url = `https://howling-monster-36925.herokuapp.com/allorderdelete/${id}`;
 
             fetch(url, {
                 method: 'DELETE'
@@ -31,7 +31,7 @@ const ManageOrders = () => {
     }
 
     const handleUpdate = (id) => {
-        const url = `http://localhost:5000/placeorders/${id}`;
+        const url = `https://howling-monster-36925.herokuapp.com/placeorders/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -53,7 +53,7 @@ const ManageOrders = () => {
     return (
         <>
     <div className="container">
-        <h1 className="text-center mt-5">Most Popular Packages</h1>
+        <h1 className="text-center mt-5">Manage Orders</h1>
     </div>
         <div className="py-5">
         <Container>
