@@ -1,0 +1,20 @@
+.booking-form{
+    border: none;
+    box-shadow: 0px 0px 10px rgb(216, 211, 211);
+}
+.card-icon{
+    font-size: 50px;
+}
+.featured-card{
+    border: none;
+    box-shadow: 0px 0px 10px rgb(216, 211, 211);
+    background-color: #1D6864;
+    color: white;
+    transform: scale(1);
+    transition: all 1s;
+}
+.featured-card:hover{
+    background-color: #2F5F37;
+    transform: scale(1.1);
+    transition: all 1s;
+}

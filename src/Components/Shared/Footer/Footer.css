@@ -1,0 +1,11 @@
+.footer-bg{
+    background-color: #1c63b8;
+}
+
+.links a {
+    color: black !important;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
