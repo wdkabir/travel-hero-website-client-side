@@ -63,7 +63,7 @@ const Featured = () => {
         <section className="booking-section container my-5">
                 <Container className="text-center">
                     <div className="sec-title text-center">
-                        <h2 className="text-uppercase abril-font mb-5">Check Availability</h2>
+                        <h1 className="mb-5">Check Availability</h1>
                     </div>
                     <Form className="p-5 rounded-3 booking-form">
                         <Row className="g-0 g-3">

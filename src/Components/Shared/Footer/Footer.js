@@ -44,9 +44,9 @@ const Footer = () => {
                         <NavLink
                             className="text-dark text-decoration-none"
                             activeStyle={activeStyle}
-                            to="/services"
+                            to="/packages"
                         >
-                            Services
+                            Packages
                         </NavLink>
                         <br />
                         <NavLink

@@ -15,7 +15,7 @@ const Banner = () => {
                     <Row>
                         <div className="col-md-12">
                             <h1 className="booking-text">TO MAKE YOUR NEXT TRAVEL DESTINATION...</h1>
-                            <Link to="/packages"><Button size="lg" className="booking-button mt-3">View All Packages {packageButtonIcon}</Button></Link>
+                            <Link to="/packages"><Button className="booking-button mt-3 py-3">View All Packages {packageButtonIcon}</Button></Link>
                         </div>
                     </Row>
                 </Container>
