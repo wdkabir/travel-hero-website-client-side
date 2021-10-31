@@ -1,18 +1,13 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faSignInAlt, faClock, faUsers } from '@fortawesome/free-solid-svg-icons';
-// import { Link } from 'react-router-dom';
 import './Packages.css';
 import usePackage from '../../Hooks/usePackage';
 import Package from '../Package/Package';
 
 const Packages = () => {
     const [packages] = usePackage();
-    // const userSignIn = <FontAwesomeIcon icon={faSignInAlt} />
-    // const durationIcon = <FontAwesomeIcon icon={faClock} />
-    // const enrolledUsersIcon = <FontAwesomeIcon icon={faUsers} />
     return (
+        //Packages Part
         <>
     <div className="container">
         <h1 className="text-center mt-5">Most Popular Packages</h1>

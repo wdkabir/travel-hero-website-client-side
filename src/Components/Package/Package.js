@@ -3,8 +3,10 @@ import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Package = (props) => {
+    //Destructuring part
     const  {_id, title, description, price, image} = props.allpackage;
     return (
+        // Package Card part
         <Col>
                         <Card>
                         <Card.Img variant="top" className=" img-fluid rounded-4 packages-card-img" src={image}/>

@@ -18,10 +18,13 @@
     color: white;
 }
 .booking-button{
-    background-color: tomato;
+    background-color: #26B9BC;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     padding: 10px 90px;
 
+}
+.booking-button:hover{
+    background-color: coral;
 }

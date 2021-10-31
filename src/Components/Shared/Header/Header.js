@@ -105,7 +105,7 @@ const Header = () => {
                                 >
                                     <div className="text-center">
                                         <h6>{displayName}</h6>
-                                        <button onClick={handleLogout} className="btn btn-primary">
+                                        <button onClick={handleLogout} className="btn btn-info">
                                             Log Out
                                         </button>
                                     </div>

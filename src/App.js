@@ -14,6 +14,7 @@ import ManageOrders from './Components/ManageOrders/ManageOrders';
 import Addpackages from './Components/Addpackages/Addpackages';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
+import Notfound from './Components/NotFound/Notfound';
 
 function App() {
   return (
@@ -55,6 +56,9 @@ function App() {
             <PrivateRoute exact path="/placeorder/:id">
               <PlaceOrder></PlaceOrder>
             </PrivateRoute>
+            <Route exact path="*">
+              <Notfound></Notfound>
+            </Route>
           </Switch>
           <Footer></Footer>
         </Router>

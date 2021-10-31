@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, Col, Container, Form, Image, Row } from 'react-bootstrap';
-import contact from '../../images/contact.jpg';
 import './Contact.css';
 
 const Contact = () => {
     return (
+        //Contact Section part
         <>
         <section className="contact-section py-5">
         <div>
@@ -23,21 +23,22 @@ const Contact = () => {
             <Container>
                 <Row className="text-center my-5">
                 <div className="col-md-6">
-                <Image src={contact} fluid />
+                <Image src="https://i.ibb.co/wpmqH9w/contact.jpg" fluid />
                     <p className="my-3">For further information on any of our services, or to reach a patient, please contact The Greenlife Hospital main phone line. If you have any questions, one of our Contact Centre Agents will be happy to direct your call to the appropriate area.</p>
                 </div>
+                {/* Contact Form Part */}
                 <div className="col-md-6">
                     <Form className="contact">
                     <Form.Text className="text-center">
                             <h1 className="py-3">Contact Us</h1>
                         </Form.Text>
                         <Row className="mb-3">
-                            <Form.Group as={Col} controlId="formGridEmail">
-                            <Form.Control type="email" placeholder="Enter Email" />
+                            <Form.Group as={Col} controlId="formGridName">
+                            <Form.Control type="text" placeholder="Enter Name" />
                             </Form.Group>
 
-                            <Form.Group as={Col} controlId="formGridPassword">
-                            <Form.Control type="password" placeholder="Enter Password" />
+                            <Form.Group as={Col} controlId="formGridEmail">
+                            <Form.Control type="email" placeholder="Enter Email" />
                             </Form.Group>
                         </Row>
 

@@ -1,18 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import useAuth from '../../Hooks/useAuth';
 
 const MyOrders = () => {
-    // const  {_id, title, description, price, image} = props.allpackage;
     const {user} = useAuth();
     const [myOrders, setMyOrders] = useState([]);
-    console.log(myOrders);
     useEffect(()=>{
         fetch(`http://localhost:5000/myorders/${user?.email}`)
         .then((res)=> res.json())
         .then((data) => setMyOrders(data));
     }, [user?.email]);
+    const handleOrderDelete = (id) => {
+        const proced = window.confirm('Are you Sure, Delete Your Data?');
+        if (proced) {
+            const url = `http://localhost:5000/orderdelete/${id}`;
+
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount > 0) {
+                        Swal.fire("Data Delete SuccessFull!",
+                            "success"
+                        )
+
+                    }
+                })
+        }
+    }
     return (
         <>
     <div className="container">
@@ -34,7 +51,7 @@ const MyOrders = () => {
                             </Card.Body>
                             <Card.Footer className="d-flex flex-column flex-md-row card-footer justify-content-between">
                             <h5 className="text-muted">${myorder?.orderplace?.price}</h5>
-                            <Link to=""><Button variant="outline-success"> Delete</Button></Link>
+                            <Button onClick={()=>handleOrderDelete(myorder._id)} variant="outline-danger"> Delete</Button>
                             </Card.Footer>
                         </Card>
                     </Col>

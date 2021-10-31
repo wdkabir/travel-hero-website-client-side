@@ -14,7 +14,7 @@
     transition: all 1s;
 }
 .featured-card:hover{
-    background-color: #2F5F37;
+    background-color: #26B9BC;
     transform: scale(1.1);
     transition: all 1s;
 }

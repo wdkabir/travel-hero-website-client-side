@@ -5,12 +5,14 @@ import { faGlobeAmericas, faHandshake, faAssistiveListeningSystems, faRoute } fr
 import './Featured.css';
 
 const Featured = () => {
+    // Font Awesome Icon
     const cardIcon1 = <FontAwesomeIcon icon={faGlobeAmericas} />
     const cardIcon2 = <FontAwesomeIcon icon={faHandshake} />
     const cardIcon3 = <FontAwesomeIcon icon={faAssistiveListeningSystems} />
     const cardIcon4 = <FontAwesomeIcon icon={faRoute} />
     return (
         <>
+        {/* Features Section Part */}
         <section className="featured my-5">
             <Container className="mx-auto">
                 <Row className="mx-auto">
@@ -57,17 +59,18 @@ const Featured = () => {
                 </Row>
             </Container>
         </section>
+        {/* Booking Section Part */}
         <section className="booking-section container my-5">
                 <Container className="text-center">
                     <div className="sec-title text-center">
-                        <h2 className="text-uppercase abril-font mb-5">Check Availability.</h2>
+                        <h2 className="text-uppercase abril-font mb-5">Check Availability</h2>
                     </div>
                     <Form className="p-5 rounded-3 booking-form">
                         <Row className="g-0 g-3">
                             <div className="col-12 col-md-6 col-lg-3">
                                 <div className="text-container d-flex justify-content-center fw-bold text-muted">
                                     <i className="fas fa-calendar-alt mt-1 me-2"></i>
-                                    <p>CHECK-IN</p>
+                                    <p>Check-In</p>
                                 </div>
                                 <input
                                     type="date"
@@ -78,7 +81,7 @@ const Featured = () => {
                             <div className="col-12 col-md-6 col-lg-3">
                                 <div className="text-container d-flex justify-content-center fw-bold text-muted">
                                     <i className="fas fa-calendar-alt mt-1 me-2"></i>
-                                    <p>CHECK-OUT</p>
+                                    <p>Check-Out</p>
                                 </div>
                                 <input
                                     type="date"
@@ -91,7 +94,7 @@ const Featured = () => {
                                     <div className="col-12 col-md-6 mb-5 mb-md-0">
                                         <div className="text-container d-flex justify-content-center fw-bold text-muted">
                                             <i className="fas fa-user-friends mt-1 me-2"></i>
-                                            <p>PERSON</p>
+                                            <p>Persons</p>
                                         </div>
                                         <FormSelect className="form-control shadow-none">
                                             <option value="01">01</option>
@@ -105,15 +108,15 @@ const Featured = () => {
                                     <div className="col-12 col-md-6 mb-5 mb-md-0">
                                         <div className="text-container d-flex justify-content-center fw-bold text-muted">
                                             <i className="fas fa-map-marker-alt mt-1 me-2"></i>
-                                            <p>CITY</p>
+                                            <p>Country</p>
                                         </div>
                                         <FormSelect className="shadow-none form-control">
-                                            <option value="new york">New York, America</option>
-                                            <option value="Chicago, America">Chicago, America</option>
-                                            <option value="Barcelona, Spain">Barcelona, Spain</option>
-                                            <option value="Moscow, Russia">Moscow, Russia</option>
-                                            <option value="Los Angels, America">Los Angels,America</option>
-                                            <option value="Sorrent, Germany">Sorrent, Germany</option>
+                                            <option value="Austria">Austria</option>
+                                            <option value="Italy">Italy</option>
+                                            <option value="India">India</option>
+                                            <option value="China">China</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Bangladesh">Bangladesh</option>
                                         </FormSelect>
                                     </div>
                                 </div>
@@ -123,7 +126,7 @@ const Featured = () => {
                                 <Button
                                     onClick={(e) => e.preventDefault()}
                                     type="submit"
-                                    className="py-3 px-3 mt-4 btn-light-green fw-bold border-0"
+                                    className="py-3 px-3 mt-4 btn-info fw-bold border-0"
                                 >
                                     Check Availability
                                 </Button>

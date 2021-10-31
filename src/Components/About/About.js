@@ -5,6 +5,7 @@ import './About.css';
 
 const About = () => {
     return (
+        //About section
         <>
             <section className="about-container my-5">
                 <div className="container">
@@ -22,7 +23,7 @@ const About = () => {
                                 “Perhaps travel cannot prevent bigotry, but by demonstrating that all peoples cry, laugh, eat, worry, and die, it can introduce the idea that if we try and understand each other, we may even become friends.” The wise words above were excerpted from Maya Angelou’s book, Wouldn’t Take Nothing for My Journey Now. With her literary prominence, Maya Angelou wrote stories centred on themes she strongly believed in, including travel. In this particular book, she expressed an opinion that travellers would most likely agree with — that to widen our perspective, to deepen our knowledge, one must explore the world.
                                 </p>
                                 <Link to="/packages">
-                                    <Button className="mt-4 text-uppercase abril-font fw-bolder">See Our Packages</Button>
+                                    <Button variant="outline-info" className="mt-4 text-uppercase fw-bolder">See Our Packages</Button>
                                 </Link>
                             </div>
                         </div>

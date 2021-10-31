@@ -1,9 +1,6 @@
 import React from 'react';
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import './TourGuide.css';
-import TourGuide1 from '../../images/TourGuide/TourGuide1.png';
-import TourGuide2 from '../../images/TourGuide/TourGuide2.png';
-import TourGuide3 from '../../images/TourGuide/TourGuide3.png';
 
 const TourGuide = () => {
     return (
@@ -17,7 +14,7 @@ const TourGuide = () => {
                         <div className="col-md-4">
                             <Col className="card-container">
                                 <Card className="h-100 border-0 card-border position-relative my-3">
-                                    <Card.Img variant="top" className="img-fluid border-0 card-img" src={TourGuide1} />
+                                    <Card.Img variant="top" className="img-fluid border-0 card-img" src="https://i.ibb.co/YNn1T7N/Tour-Guide1.png" />
 
                                     <div className="position-absolute bottom-0 left-0 w-100 text-center p-3 guide-info">
                                         <Card.Title> <h2> Kabir Hossain</h2></Card.Title>
@@ -30,7 +27,7 @@ const TourGuide = () => {
                         <div className="col-md-4">
                             <Col className="card-container">
                                 <Card className="h-100 border-0 card-border position-relative my-3">
-                                    <Card.Img variant="top" className="img-fluid border-0 card-img" src={TourGuide2} />
+                                    <Card.Img variant="top" className="img-fluid border-0 card-img" src="https://i.ibb.co/V9yMDCB/Tour-Guide2.png" />
 
                                     <div className="position-absolute bottom-0 left-0 w-100 text-center p-3 guide-info">
                                         <Card.Title> <h2>Joya Hossain</h2></Card.Title>
@@ -44,7 +41,7 @@ const TourGuide = () => {
                         <div className="col-md-4">
                             <Col className="card-container">
                                 <Card className="h-100 border-0 card-border position-relative my-3">
-                                    <Card.Img variant="top" className="img-fluid border-0 card-img" src={TourGuide3} />
+                                    <Card.Img variant="top" className="img-fluid border-0 card-img" src="https://i.ibb.co/jzC8CGW/Tour-Guide3.png" />
 
                                     <div className="position-absolute bottom-0 left-0 w-100 text-center p-3 guide-info">
                                         <Card.Title> <h2>Badhan Roy</h2></Card.Title>

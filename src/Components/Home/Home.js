@@ -9,6 +9,7 @@ import TourGuide from '../TourGuide/TourGuide';
 
 const Home = () => {
     return (
+        //Components
         <>
             <Banner></Banner>
             <Featured></Featured>
