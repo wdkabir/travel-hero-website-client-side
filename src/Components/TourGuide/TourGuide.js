@@ -44,7 +44,7 @@ const TourGuide = () => {
                                     <Card.Img variant="top" className="img-fluid border-0 card-img" src="https://i.ibb.co/jzC8CGW/Tour-Guide3.png" />
 
                                     <div className="position-absolute bottom-0 left-0 w-100 text-center p-3 guide-info">
-                                        <Card.Title> <h2>Badhan Roy</h2></Card.Title>
+                                        <Card.Title> <h2>Monir Hossain</h2></Card.Title>
                                         <Card.Text><h5>Tour guide</h5></Card.Text>
                                     </div>
 
