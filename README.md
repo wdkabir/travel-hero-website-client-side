@@ -14,3 +14,9 @@
 - Context api was used to get data easily from all the route
 - Used Private Route, Google-SignIn for Authentication
 - I've created my own backend as well as some api's to connect my client side to the database
+- Users can see the tour packages which will be loaded from MongoDB.
+- Users can order any package and their data will be saved on the database.
+- Users need to create accounts via google then can see their individual orders in my
+order's section and cancel any order too.
+- Admin can see all the orders of all users and can cancel any order at any time.
+- Admin Add Tour Packages.
